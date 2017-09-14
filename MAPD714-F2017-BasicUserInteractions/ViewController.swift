@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var outputLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func buttonAction(_ sender: UIButton) {
+        
+        outputLable.text = sender.titleLabel!.text! + " button was clicked"
+    }
 
+    
+    
 }
 
